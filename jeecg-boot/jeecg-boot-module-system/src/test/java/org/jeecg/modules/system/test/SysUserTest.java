@@ -3,7 +3,7 @@ package org.jeecg.modules.system.test;
 import org.jeecg.JeecgSystemApplication;
 import org.jeecg.common.constant.CommonConstant;
 import org.jeecg.common.system.util.JwtUtil;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.tools.util.RedisUtil;
 import org.jeecg.common.util.RestUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;

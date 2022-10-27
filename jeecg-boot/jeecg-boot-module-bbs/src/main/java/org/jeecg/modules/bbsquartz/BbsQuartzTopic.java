@@ -2,8 +2,6 @@ package org.jeecg.modules.bbsquartz;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.util.DateUtils;
-import org.jeecg.modules.bbs.entity.BbsTopic;
-import org.jeecg.modules.bbs.entity.BbsUserRecord;
 import org.jeecg.modules.bbs.service.IBbsUserRecordService;
 import org.jeecg.modules.bbs.service.impl.BbsTopicServiceImpl;
 import org.jeecg.modules.cache.BbsRedisUtils;

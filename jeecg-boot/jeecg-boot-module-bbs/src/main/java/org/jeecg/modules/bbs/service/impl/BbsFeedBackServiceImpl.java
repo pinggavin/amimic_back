@@ -1,11 +1,10 @@
 package org.jeecg.modules.bbs.service.impl;
 
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.PrincipalCollection;
 import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.constant.CacheConstant;
+import org.jeecg.tools.constant.CacheConstant;
 import org.jeecg.common.system.vo.LoginUser;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.tools.util.RedisUtil;
 import org.jeecg.modules.bbs.entity.BbsFeedBack;
 import org.jeecg.modules.bbs.entity.BbsFeedBackFullDto;
 import org.jeecg.modules.bbs.entity.BbsTopicImage;

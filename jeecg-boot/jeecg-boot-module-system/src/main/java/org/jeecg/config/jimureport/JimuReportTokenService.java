@@ -1,10 +1,9 @@
 package org.jeecg.config.jimureport;
 
-import org.jeecg.common.constant.DataBaseConstant;
-import org.jeecg.common.system.api.ISysBaseAPI;
+import org.jeecg.api.local.ISysBaseAPI;
 import org.jeecg.common.system.util.JwtUtil;
 import org.jeecg.common.system.vo.SysUserCacheInfo;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.tools.util.RedisUtil;
 import org.jeecg.common.util.TokenUtils;
 import org.jeecg.modules.jmreport.api.JmReportTokenServiceI;
 import org.springframework.beans.factory.annotation.Autowired;

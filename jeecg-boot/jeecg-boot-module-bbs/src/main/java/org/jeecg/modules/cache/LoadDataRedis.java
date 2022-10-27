@@ -3,7 +3,7 @@ package org.jeecg.modules.cache;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.common.util.CommonRedisUtil;
 import org.jeecg.modules.bbs.entity.BbsClass;
 import org.jeecg.modules.bbs.entity.BbsRegion;
 import org.jeecg.modules.bbs.entity.BbsTopicFullDto;
@@ -12,13 +12,10 @@ import org.jeecg.modules.bbs.service.IBbsRegionService;
 import org.jeecg.modules.bbs.service.IBbsTopicFullDtoService;
 import org.jeecg.modules.bbs.service.impl.BbsUserRecordServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 /**
  * 启动项目后, 加载数据库数据到redis中
@@ -35,7 +32,7 @@ public class LoadDataRedis {
     @Autowired
     private IBbsTopicFullDtoService bbsTopicFullDtoService;
     @Autowired
-    private RedisUtil redisUtil;
+    private CommonRedisUtil redisUtil;
 
     /**
      * 区域

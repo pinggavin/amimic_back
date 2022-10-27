@@ -9,7 +9,7 @@ import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.aspect.annotation.AutoLog;
 import org.jeecg.common.system.vo.LoginUser;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.tools.util.RedisUtil;
 import org.jeecg.common.util.oss.QiNiuUtil;
 import org.jeecg.modules.bbs.entity.*;
 import org.jeecg.modules.bbs.mapper.*;

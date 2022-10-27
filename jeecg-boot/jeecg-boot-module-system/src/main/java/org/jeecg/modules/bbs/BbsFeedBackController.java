@@ -13,7 +13,6 @@ import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.modules.bbs.entity.BbsFeedBack;
 import org.jeecg.modules.bbs.entity.BbsFeedBackFullDto;
-import org.jeecg.modules.bbs.entity.BbsRegion;
 import org.jeecg.modules.bbs.entity.BbsTopicImage;
 import org.jeecg.modules.bbs.service.IBbsFeedBackService;
 import org.jeecg.modules.bbs.service.impl.BbsTopicImageServiceImpl;

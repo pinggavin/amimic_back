@@ -5,8 +5,6 @@ import org.jeecg.modules.bbs.entity.BbsTopic;
 import org.jeecg.modules.bbs.entity.BbsUserRecord;
 import org.jeecg.modules.bbs.entity.BbsUserStar;
 import org.jeecg.modules.bbs.mapper.BbsUserStarMapper;
-import org.jeecg.modules.bbs.service.IBbsTopicImageService;
-import org.jeecg.modules.bbs.service.IBbsTopicTagService;
 import org.jeecg.modules.bbs.service.IBbsUserStarService;
 import org.jeecg.modules.cache.BbsRedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;

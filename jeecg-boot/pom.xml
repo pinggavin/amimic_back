@@ -140,36 +140,36 @@
             </dependency>
 
             <!-- jeecg tools -->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-boot-base-tools</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.jeecgframework.boot</groupId>-->
+            <!--<artifactId>jeecg-boot-base-tools</artifactId>-->
+            <!--<version>${jeecgboot.version}</version>-->
+            <!--</dependency>-->
             <!-- jeecg core -->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-boot-base-core</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.jeecgframework.boot</groupId>-->
+                <!--<artifactId>jeecg-boot-base-core</artifactId>-->
+                <!--<version>${jeecgboot.version}</version>-->
+            <!--</dependency>-->
             <!-- system 单体 api -->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-system-local-api</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.jeecgframework.boot</groupId>-->
+            <!--<artifactId>jeecg-system-local-api</artifactId>-->
+            <!--<version>${jeecgboot.version}</version>-->
+            <!--</dependency>-->
             <!-- system 微服务 api -->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-system-cloud-api</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.jeecgframework.boot</groupId>-->
+            <!--<artifactId>jeecg-system-cloud-api</artifactId>-->
+            <!--<version>${jeecgboot.version}</version>-->
+            <!--</dependency>-->
 
             <!--微服务模块-->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-boot-starter-cloud</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.jeecgframework.boot</groupId>-->
+            <!--<artifactId>jeecg-boot-starter-cloud</artifactId>-->
+            <!--<version>${jeecgboot.version}</version>-->
+            <!--</dependency>-->
 
             <!--xxl-job定时任务-->
             <dependency>
@@ -296,8 +296,46 @@
             <!--<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>  -->
+
+
+            <!--<plugin>-->
+
+                <!--<groupId>org.springframework.boot</groupId>-->
+
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+
+                <!--<configuration>-->
+                    <!--<mainClass>JeecgSystemApplication</mainClass>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>repackage</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>org.jeecg.JeecgSystemApplication</mainClass>
+                    <classifier>exec</classifier>
+                    <!--<fork>true</fork> &lt;!&ndash; 如果没有该配置，devtools不会生效 &ndash;&gt;-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中 -->
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
-             指定JDK编译版本 -->
+
+            <!-- 指定JDK编译版本 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

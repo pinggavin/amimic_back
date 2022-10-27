@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.system.vo.LoginUser;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.common.util.CommonRedisUtil;
 import org.jeecg.modules.bbs.entity.BbsTopicFullDto;
 import org.jeecg.modules.bbs.entity.BbsUserPraise;
 import org.jeecg.modules.bbs.entity.BbsUserStar;
@@ -15,14 +15,12 @@ import org.jeecg.modules.bbs.mapper.BbsTopicMapper;
 import org.jeecg.modules.bbs.service.IBbsTopicFullDtoService;
 import org.jeecg.modules.cache.BbsRedisUtils;
 import org.jeecg.modules.cache.LoadDataRedis;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @Description: 帖子
@@ -38,7 +36,7 @@ public class BbsTopicFullDtoServiceImpl extends ServiceImpl<BbsTopicFullDtoMappe
     @Resource
     private BbsTopicFullDtoMapper bbsTopicFullDtoMapper;
     @Autowired
-    private RedisUtil redisUtil;
+    private CommonRedisUtil redisUtil;
     @Autowired
     private BbsRedisUtils bbsRedisUtils;
 

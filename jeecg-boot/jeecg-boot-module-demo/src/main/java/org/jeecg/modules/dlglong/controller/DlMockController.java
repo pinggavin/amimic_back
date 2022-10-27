@@ -16,7 +16,6 @@ import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.constant.VXESocketConst;
 import org.jeecg.modules.demo.mock.vxe.websocket.VXESocket;
 import org.jeecg.modules.dlglong.entity.MockEntity;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;

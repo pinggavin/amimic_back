@@ -6,9 +6,9 @@ import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import org.jeecg.common.base.BaseMap;
-import org.jeecg.common.constant.CacheConstant;
-import org.jeecg.common.constant.GlobalConstants;
+import org.jeecg.tools.base.BaseMap;
+import org.jeecg.tools.constant.CacheConstant;
+import org.jeecg.tools.constant.GlobalConstants;
 import org.jeecg.modules.system.entity.SysGatewayRoute;
 import org.jeecg.modules.system.mapper.SysGatewayRouteMapper;
 import org.jeecg.modules.system.service.ISysGatewayRouteService;
@@ -17,9 +17,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Description: gateway路由管理

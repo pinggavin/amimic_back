@@ -1,6 +1,5 @@
 package org.jeecg.modules.bbs.service;
 
-import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.modules.bbs.entity.BbsClass;
 import org.jeecg.modules.bbs.entity.BbsRegion;

@@ -12,9 +12,9 @@ import javax.websocket.Session;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
-import org.jeecg.common.base.BaseMap;
+import org.jeecg.tools.base.BaseMap;
 import org.jeecg.common.constant.WebsocketConst;
-import org.jeecg.common.modules.redis.client.JeecgRedisClient;
+import org.jeecg.tools.redis.client.JeecgRedisClient;
 import org.springframework.stereotype.Component;
 
 import com.alibaba.fastjson.JSONObject;

@@ -13,7 +13,6 @@ import org.jeecg.common.aspect.annotation.PermissionData;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.system.vo.LoginUser;
-import org.jeecg.modules.bbs.BbsAuthController;
 import org.jeecg.modules.bbs.entity.*;
 import org.jeecg.modules.bbs.service.IBbsMessageBoardService;
 import org.jeecg.modules.bbs.service.IBbsUserRecordService;

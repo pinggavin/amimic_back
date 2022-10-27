@@ -131,9 +131,9 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://地址:3306/数据库?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://43.142.181.31:3306/amimic?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
           username: root
-          password:
+          password: root
           driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
           #multi-datasource1:
@@ -144,7 +144,7 @@ spring:
   #redis 配置
   redis:
     database: 1
-    host:
+    host: 43.142.181.31
     lettuce:
       pool:
         max-active: 8   #最大连接数据库连接数,设 0 为没有限制
@@ -152,7 +152,7 @@ spring:
         max-wait: -1ms  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
         min-idle: 0     #最小等待连接中的数量,设 0 为没有限制
       shutdown-timeout: 100ms
-    password:
+    password: root
     port: 6379
 #mybatis plus 设置
 mybatis-plus:
@@ -194,10 +194,10 @@ jeecg:
     bucketName: ??
     staticDomain: https://static.jeecg.com
   qiniuoss:
-    accessKey:
-    secretKey:
-    bucket:
-    doMain:
+    accessKey: gVjgiBM4xDvjuzaWwfaBE0GNOhv9G9KLgg3ZbGH6
+    secretKey: HWOZWDMUcFfNoyUVkmc8lqy-GPX2h65RZV_h7UwT
+    bucket: jm-userdata
+    doMain: http://ri6x6q7wx.hd-bkt.clouddn.com
   # ElasticSearch 设置
   elasticsearch:
     cluster-name: jeecg-ES
@@ -298,5 +298,5 @@ IMConfig:
   secretKey:
 
 weixin:
-  appid:
-  secret:
+  appid: wxea43cfbf77157102
+  secret: 898a526a7fb334281f830bd2c887ddb2

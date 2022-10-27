@@ -5,12 +5,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.system.vo.LoginUser;
-import org.jeecg.modules.bbs.entity.BbsUserMessage;
 import org.jeecg.modules.bbs.entity.BbsUserMessageFullDto;
 import org.jeecg.modules.bbs.mapper.BbsUserMessageFullDtoMapper;
-import org.jeecg.modules.bbs.mapper.BbsUserMessageMapper;
 import org.jeecg.modules.bbs.service.IBbsUserMessageFullDtoService;
-import org.jeecg.modules.bbs.service.IBbsUserMessageService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

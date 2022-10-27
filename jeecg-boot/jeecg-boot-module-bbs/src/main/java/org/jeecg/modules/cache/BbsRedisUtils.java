@@ -1,7 +1,7 @@
 package org.jeecg.modules.cache;
 
 import lombok.extern.slf4j.Slf4j;
-import org.jeecg.common.util.RedisUtil;
+import org.jeecg.common.util.CommonRedisUtil;
 import org.jeecg.modules.bbs.entity.BbsRegion;
 import org.jeecg.modules.bbs.entity.BbsTopicFullDto;
 import org.jeecg.modules.bbs.service.IBbsClassService;
@@ -32,7 +32,7 @@ public class BbsRedisUtils {
     @Autowired
     private IBbsTopicFullDtoService bbsTopicFullDtoService;
     @Autowired
-    private RedisUtil redisUtil;
+    private CommonRedisUtil redisUtil;
     static Double precision = 0.00001;              //新增贴子精度
 
 

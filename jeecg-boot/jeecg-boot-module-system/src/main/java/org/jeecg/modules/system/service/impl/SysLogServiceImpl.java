@@ -1,13 +1,12 @@
 package org.jeecg.modules.system.service.impl;
 
-import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
 
-import org.jeecg.common.system.api.ISysBaseAPI;
+import org.jeecg.api.local.ISysBaseAPI;
 import org.jeecg.common.util.CommonUtils;
 import org.jeecg.modules.system.entity.SysLog;
 import org.jeecg.modules.system.mapper.SysLogMapper;

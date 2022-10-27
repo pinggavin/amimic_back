@@ -1,7 +1,6 @@
 package org.jeecg.modules.demo.test.controller;
 
 import java.util.Arrays;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
